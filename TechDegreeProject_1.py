@@ -1,6 +1,9 @@
 """
 Python Web Development Techdegree
 Project 1 - Number Guessing Game
+By Samuel Blowe
+I want to do the extra credit but I cannot seem to get the
+high score to work properply. Aside from that, this is my first draft!
 --------------------------------
 
 """
@@ -48,10 +51,5 @@ def guessing_game():
         guessing_game()
     else:
         print("Come back again to play again soon!\nGAME OVER")
-
-
-            okok
-            
-
 
 guessing_game()
