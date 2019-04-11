@@ -10,12 +10,12 @@ high score to work properply. Aside from that, this is my first draft!
 
 import random
 
-
+high_score = [] #list was ppreviously inside of while loop
 def guessing_game():
-    high_score = []
+    
     print("""Hello, player!
         \nWelcome to the guessing game!
-        \nThe score is {}!
+        \nThe score is {} attempts!
         \nYou will be choosing a number between 1 and 10.
         """.format(high_score))
     players_choice = 0
@@ -42,11 +42,9 @@ def guessing_game():
             print("Oh no! We ran into an issue. Please try again.")
 
     print("You attempted {} times.".format(player_attempt))
-    new_score = input("Enter a name to for the scoreboard:  ")
-    if new_score == True:
-        high_score.append(new_score,player_attempt)
+    high_score.extend([player_attempt])
 
-    retry = input("Would like another attempt at the game? (y/n):  ")
+    retry = input("Would you like another attempt at the game? (y/n):  ")
     if retry == str("y"):
         guessing_game()
     else:
